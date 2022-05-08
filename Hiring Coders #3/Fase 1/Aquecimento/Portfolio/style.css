@@ -15,7 +15,7 @@ a {
 }
 
 body {
-  background: url(./images/writer.jpg) no-repeat center center fixed;
+  background: url(./images/writer.jpg) no-repeat bottom left fixed;
 }
 
 header {
@@ -23,6 +23,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+  margin-bottom: 45px;
 }
 
 header ul {
@@ -44,21 +45,50 @@ header ul li a:hover{
 
 .container .name h1 {
   font-weight: bolder;
-  font-size: 81px;
+  font-size: 63px;
 }
 
 .container .name h5{
-  font-size: 54px;
+  font-size: 36px;
+}
+
+#arrow {
+  font-size: 36px;
+  cursor: pointer;
+  animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+#animation {
+  transition: 300ms;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+.active {
+  display: block !important;
 }
 
 #about p {
-  max-width: 75%;
+  max-width: 60%;
   margin: 0 auto;
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 9px;
 }
 
 .form {
   width: 40%;
   margin: 0 auto;
+  margin-top: 36px;
 }
 
 .form input {
@@ -66,6 +96,7 @@ header ul li a:hover{
   padding: 5px 10px;
   border: none;
   border-radius: 5px 0px 0px 5px;
+  margin-top: 9px;
 }
 
 .form button {
@@ -79,9 +110,26 @@ header ul li a:hover{
   transition: 300ms;
   border-radius: 0px 5px 5px 0px;
   margin-left: -5px;
+  margin-top: 9px;
 }
 
 .form button:hover{
   background-color: #00004667;
   color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container .name h1 {
+    font-size: 45px;
+  }
+
+  .container .name h5 {
+    font-size: 27px;
+  }
 }

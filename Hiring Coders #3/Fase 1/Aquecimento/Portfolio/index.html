@@ -40,12 +40,23 @@
           <h5>Roteirista</h5>
         </div>
 
-        <div id="arrow">
-          <i class="fa-solid fa-caret-down"></i>
+        <div onclick="displayAbout()" id="arrow">
+          <i id="animation" class="fa-solid fa-caret-down"></i>
         </div>
 
-        <div id="about">
-          <p>Texto sobre mim</p>
+        <div style="display: none" id="about">
+          <p>
+            Formada em Bacharelado e Licenciatura em Artes Visuais pela
+            Universidade Estadual Paulista "Júlio de Mesquita Filho" - UNESP e
+            Produção de Áudio e Vídeo pela ETEC Jornalista Roberto Marinho.
+            Trabalha há mais de 10 anos como freelancer de Design Editorial e há
+            3 anos como roteirista em diversas mídias.
+          </p>
+          <p>
+            Atualmente, cursa a Especialização em Produção de Conteúdos
+            Audiovisuais para Multiplataformas na Universidade Federal de São
+            Carlos - UFSCar.
+          </p>
         </div>
 
         <div class="form">
@@ -59,5 +70,14 @@
         </div>
       </section>
     </main>
+
+    <script>
+      function displayAbout() {
+        var arrow = document.getElementById('animation')
+        arrow.classList.toggle('rotate')
+        var display = document.getElementById('about')
+        display.classList.toggle('active')
+      }
+    </script>
   </body>
 </html>
