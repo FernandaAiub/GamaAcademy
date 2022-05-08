@@ -18,6 +18,26 @@ body {
   background: url(./images/writer.jpg) no-repeat center center fixed;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+header ul {
+  display: flex;
+
+}
+
+header ul li {
+  padding: 9px;
+}
+
+header ul li a:hover{
+  color: #00004667;
+}
+
 .container {
   text-align: center;
 }
@@ -43,8 +63,25 @@ body {
 
 .form input {
   width: 50%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
 }
 
 .form button {
   width: 15%;
+  padding: 5px 10px;
+  background-color: #0000463f;
+  color: #464646;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: 300ms;
+  border-radius: 0px 5px 5px 0px;
+  margin-left: -5px;
+}
+
+.form button:hover{
+  background-color: #00004667;
+  color: #fff;
 }
