@@ -118,6 +118,16 @@ header ul li a:hover{
   color: #fff;
 }
 
+footer {
+  position: fixed;
+  bottom: 9px;
+  width: 100%;
+}
+
+footer a:hover{
+  color: #00004667;
+}
+
 @media only screen and (max-width: 768px) {
   .form {
     width: 100%;
