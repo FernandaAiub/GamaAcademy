@@ -1,4 +1,4 @@
-var valores = [5, 8, 10, 22, 45, 38]
+var valores = [5, 8, 10, 22, 38, 45, 60, 90, 100, 120]
 
 function busca(num) {
   for (i = 0; i < 6; i++) {
@@ -9,7 +9,34 @@ function busca(num) {
   return -1
 }
 
-// usando a nossa ferramenta de busca //
+function buscaBin(num) {
+  let inicio, fim
+  inicio = 0
+  fim = 9
+  let passos = 0
+  while (inicio <= fim) {
+    meio = parseInt((inicio + fim) / 2)
+    passos = passos + 1
+    if (num == valores[meio]) {
+      console.log('Achei em ' + passos + ' passos!')
+      return meio
+    } else {
+      if (num > valores[meio]) {
+        inicio = meio + 1
+      } else {
+        fim = meio - 1
+      }
+    }
+  }
+  console.log('Não achei em ' + passos + ' passos!')
+  return -1
+}
+
+// usando a nossaa ferramentas de busca //
 
 console.log(busca(10))
 console.log(busca(50))
+
+console.log(buscaBin(10))
+console.log(buscaBin(60))
+console.log(buscaBin(50))
