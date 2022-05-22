@@ -1,4 +1,4 @@
-// Exemplo: número sorteado
+// Exemplo for: número sorteado
 
 var numeroSorteado = 9
 
@@ -9,7 +9,7 @@ for (var i = 0; i < 100; i++) {
   }
 }
 
-// Exemplo: tabuada
+// Exemplo for: tabuada
 
 var tabuada = 7
 
